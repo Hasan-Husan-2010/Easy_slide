@@ -12,6 +12,20 @@ img {
     position: relative;
     overflow: hidden;
 }
+.slider2 {
+    max-width: 1200px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+.slider3 {
+    max-width: 1200px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
 .btn {
     position: absolute;
     top: 50%;
@@ -36,12 +50,42 @@ img {
 .next {
     right: 10px;
 }
+.prev2 {
+    left: 10px;
+}
+.next2 {
+    right: 10px;
+}
+.prev3 {
+    left: 10px;
+}
+.next3 {
+    right: 10px;
+}
 .slides {
+    display: flex;
+    transition: 0.3s all linear;
+}
+.slides2 {
+    display: flex;
+    transition: 0.3s all linear;
+}
+.slides3 {
     display: flex;
     transition: 0.3s all linear;
 }
 .slide {
     width: 33.33%;
+    flex-shrink: 0;
+    padding: 18px;
+}
+.slide2 {
+    width: 50%;
+    flex-shrink: 0;
+    padding: 18px;
+}
+.slide3 {
+    width: 100%;
     flex-shrink: 0;
     padding: 18px;
 }
@@ -63,4 +107,85 @@ img {
 .txt {
     font-size: 18px;
     line-height: 1.6;
+}
+@media(max-width:990px) {
+    .slider {
+        margin: 0 auto;
+    }
+}
+@media(max-width:880px) {
+    .pic {
+        width: 100px;
+    }
+    .txt {
+        font-size: 14px;
+    }
+    .h3 {
+        font-size: 20px;
+    }
+}
+@media(max-width:880px) {
+    .pic {
+        width: 80px;
+    }
+    .txt {
+        font-size: 12px;
+    }
+    .h3 {
+        font-size: 14px;
+    }
+    .next {
+        right: 0;
+    }
+    .prev {
+        left: 0;
+    }
+}
+@media(max-width:565px) {
+    .pic {
+        width: 80px;
+        border: 3px solid black;
+    }
+    .txt {
+        font-size: 10px;
+    }
+    .h3 {
+        font-size: 12px;
+    }
+    .slider {
+        display: none;
+    }
+    .slider2 {
+        display: block;
+    }
+    .next2 {
+        right: 0;
+    }
+    .prev2 {
+        left: 0;
+    }
+}
+@media(max-width:390px) {
+    .pic {
+        width: 80px;
+        border: 3px solid black;
+    }
+    .txt {
+        font-size: 10px;
+    }
+    .h3 {
+        font-size: 12px;
+    }
+    .slider2 {
+        display: none;
+    }
+    .slider3 {
+        display: block;
+    }
+    .next3 {
+        right: 0;
+    }
+    .prev3 {
+        left: 0;
+    }
 }
